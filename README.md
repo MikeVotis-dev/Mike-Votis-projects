@@ -63,7 +63,8 @@ python turtle.catch.py
 
 ## 📄 License
 
-Feel free to use these projects for learning and personal use.
+You can use these projects BUT <b>The source must be cited.<b/>
+Please write this in the code as a comment = This part is from Michail Votis (https://github.com/MikeVotis-dev/Mike-Votis-projects)
 
 ---
 
