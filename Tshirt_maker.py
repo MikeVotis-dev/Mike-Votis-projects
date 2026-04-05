@@ -1,3 +1,8 @@
+#--------------------------If you want to PLAY it ,press the DOWNLOAD BUTTON---------------------------------
+#--------------------------You need also to have downloaded the Python from https://www.python.org 
+# For further information ASK CHAT GPT OR GEMINI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
 import math
 import turtle
 
