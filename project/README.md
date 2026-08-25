@@ -1,4 +1,4 @@
-#Note: I used Ai to help me wrigt this
+#Note: I got some help from AI to write some parts of this Text because I am not the best at writting texts
 
 
 # My Budget Tracker
