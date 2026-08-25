@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="col-md-6 mx-auto">
+    <h2>New Entry</h2>
+    <form action="/add" method="post">
+        <div class="mb-3">
+            <select class="form-select" name="type" required>
+                <option value="" disabled selected>Select Type</option>
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" name="category" placeholder="Category" type="text" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" name="amount" placeholder="Amount" type="number" step="0.01" min="0.01" required>
+        </div>
+        <button class="btn btn-success" type="submit">Save</button>
+    </form>
+</div>
+{% endblock %}
