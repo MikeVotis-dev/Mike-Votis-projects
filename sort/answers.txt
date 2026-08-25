@@ -1,11 +1,8 @@
-sort1 uses: bubble sort
-
-How do you know?: It takes roughly the same amount of time regardless of whether the numbers are reversed or random because it always scans the entire list.
-
-sort2 uses: selection sort
-
+sort1 uses: merge sort
 How do you know?: It is significantly faster than the others, especially on large reversed lists, due to its divide-and-conquer approach.
 
-sort3 uses: merge sort
-
+sort2 uses: bubble sort
 How do you know?: It is extremely slow on reversed lists, but very fast if the list is already sorted.
+
+sort3 uses: selection sort
+How do you know?: It takes roughly the same amount of time regardless of whether the numbers are reversed or random because it always scans the entire list.
