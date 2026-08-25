@@ -24,6 +24,7 @@ def register():
         if not name or not pwd:
             return "Missing info", 400
 
+        # Note: For this advanced hashing and security logic, I used Gemini as an AI tool to assist me for my final project.
         hashed_pwd = generate_password_hash(pwd)
 
         try:
