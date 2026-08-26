@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card shadow-sm p-4 bg-light">
+            <h3 class="mb-3">Welcome to your Dashboard</h3>
+            <p class="text-muted mb-0">Here is a record of all your financial entries.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h4 class="card-title mb-3">Transaction History</h4>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for row in transactions %}
+                            <tr>
+                                <td>{{ row.date }}</td>
+                                <td>
+                                    {% if row.type == 'Income' %}
+                                        <span class="badge bg-success">Income</span>
+                                    {% else %}
+                                        <span class="badge bg-danger">Expense</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ row.category }}</td>
+                                <td>
+                                    {% if row.type == 'Income' %}
+                                        <span class="text-success fw-bold">+${{ row.amount }}</span>
+                                    {% else %}
+                                        <span class="text-danger fw-bold">-${{ row.amount }}</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
