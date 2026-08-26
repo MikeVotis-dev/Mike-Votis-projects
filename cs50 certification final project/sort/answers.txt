@@ -1,8 +1,0 @@
-sort1 uses: Bubble Sort
-How do you know?: It has a fast runtime for sorted datasets, but performs poorly on bigger datasets of reversed and random numbers.
-
-sort2 uses: Merge Sort
-How do you know?: It is extremely efficient and fast across all datasets due to its divide-and-conquer approach.
-
-sort3 uses: Selection Sort
-How do you know?: It performs similarly and slowly across large datasets regardless of whether they are random or reversed because it always scans the entire list.
